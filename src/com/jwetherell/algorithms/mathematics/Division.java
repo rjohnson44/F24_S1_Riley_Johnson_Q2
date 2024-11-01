@@ -2,12 +2,12 @@ package com.jwetherell.algorithms.mathematics;
 
 public class Division {
 
-    public static final long division(int a, int b) {
+    public static final long division(int a, int b) throws IllegalArgumentException {
         long result = ((long) a) / ((long) b);
         return result;
     }
 
-    public static final long divisionUsingLoop(int a, int b) {
+    public static final long divisionUsingLoop(int a, int b) throws IllegalArgumentException {
         int absA = Math.abs(a);
         int absB = Math.abs(b);
 
@@ -21,7 +21,7 @@ public class Division {
         return (a > 0 && b > 0 || a < 0 && b < 0) ? result : -result;
     }
 
-    public static final long divisionUsingRecursion(int a, int b) {
+    public static final long divisionUsingRecursion(int a, int b) throws IllegalArgumentException {
         int absA = Math.abs(a);
         int absB = Math.abs(b);
 
@@ -37,7 +37,7 @@ public class Division {
         return (a > 0 && b > 0 || a < 0 && b < 0) ? result : -result;
     }
 
-    public static final long divisionUsingMultiplication(int a, int b) {
+    public static final long divisionUsingMultiplication(int a, int b) throws IllegalArgumentException {
         int absA = Math.abs(a);
         int absB = Math.abs(b);
 
@@ -54,7 +54,7 @@ public class Division {
         return (a > 0 && b > 0 || a < 0 && b < 0) ? result : -result;
     }
 
-    public static final long divisionUsingShift(int a, int b) {
+    public static final long divisionUsingShift(int a, int b) throws IllegalArumentException {
         int absA = Math.abs(a);
         int absB = Math.abs(b);
         int tempA, tempB, counter;
@@ -75,7 +75,7 @@ public class Division {
         return (a > 0 && b > 0 || a < 0 && b < 0) ? result : -result;
     }
 
-    public static final long divisionUsingLogs(int a, int b) {
+    public static final long divisionUsingLogs(int a, int b) throws IllegalArgumentException {
         long absA = Math.abs(a);
         long absB = Math.abs(b);
         double logBase10A = Math.log10(absA);
