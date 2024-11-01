@@ -1,7 +1,9 @@
 package com.jwetherell.algorithms.mathematics;
 
-public class Division {
 
+
+public class Division {
+    //IllegalArgumentException ensures that if a division by zero is detected the programmer will be able to handle it
     public static final long division(int a, int b) throws IllegalArgumentException {
         long result = ((long) a) / ((long) b);
         return result;
